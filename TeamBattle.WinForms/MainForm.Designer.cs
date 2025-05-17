@@ -64,38 +64,40 @@
             // llabelTeamCount
             // 
             llabelTeamCount.AutoSize = true;
-            llabelTeamCount.Location = new Point(23, 37);
+            llabelTeamCount.Location = new Point(20, 28);
             llabelTeamCount.Name = "llabelTeamCount";
-            llabelTeamCount.Size = new Size(149, 20);
+            llabelTeamCount.Size = new Size(119, 15);
             llabelTeamCount.TabIndex = 0;
             llabelTeamCount.Text = "Количество команд:";
             // 
             // numericUpDownTeamCount
             // 
-            numericUpDownTeamCount.Location = new Point(243, 35);
+            numericUpDownTeamCount.Location = new Point(213, 26);
+            numericUpDownTeamCount.Margin = new Padding(3, 2, 3, 2);
             numericUpDownTeamCount.Maximum = new decimal(new int[] { 9, 0, 0, 0 });
             numericUpDownTeamCount.Minimum = new decimal(new int[] { 2, 0, 0, 0 });
             numericUpDownTeamCount.Name = "numericUpDownTeamCount";
-            numericUpDownTeamCount.Size = new Size(150, 27);
+            numericUpDownTeamCount.Size = new Size(131, 23);
             numericUpDownTeamCount.TabIndex = 1;
             numericUpDownTeamCount.Value = new decimal(new int[] { 3, 0, 0, 0 });
             // 
             // labelPoolSize
             // 
             labelPoolSize.AutoSize = true;
-            labelPoolSize.Location = new Point(23, 82);
+            labelPoolSize.Location = new Point(20, 62);
             labelPoolSize.Name = "labelPoolSize";
-            labelPoolSize.Size = new Size(177, 20);
+            labelPoolSize.Size = new Size(141, 15);
             labelPoolSize.TabIndex = 2;
             labelPoolSize.Text = "Начальный пул бойцов:";
             // 
             // numericUpDownPoolSize
             // 
-            numericUpDownPoolSize.Location = new Point(243, 80);
+            numericUpDownPoolSize.Location = new Point(213, 60);
+            numericUpDownPoolSize.Margin = new Padding(3, 2, 3, 2);
             numericUpDownPoolSize.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             numericUpDownPoolSize.Minimum = new decimal(new int[] { 10, 0, 0, 0 });
             numericUpDownPoolSize.Name = "numericUpDownPoolSize";
-            numericUpDownPoolSize.Size = new Size(150, 27);
+            numericUpDownPoolSize.Size = new Size(131, 23);
             numericUpDownPoolSize.TabIndex = 3;
             numericUpDownPoolSize.Value = new decimal(new int[] { 100, 0, 0, 0 });
             numericUpDownPoolSize.ValueChanged += numericUpDownPoolSize_ValueChanged;
@@ -103,25 +105,27 @@
             // labelInitialTeamSize
             // 
             labelInitialTeamSize.AutoSize = true;
-            labelInitialTeamSize.Location = new Point(23, 128);
+            labelInitialTeamSize.Location = new Point(20, 96);
             labelInitialTeamSize.Name = "labelInitialTeamSize";
-            labelInitialTeamSize.Size = new Size(214, 20);
+            labelInitialTeamSize.Size = new Size(168, 15);
             labelInitialTeamSize.TabIndex = 4;
             labelInitialTeamSize.Text = "Начально бойцов в команде:";
             // 
             // numericUpDownInitialTeamSize
             // 
-            numericUpDownInitialTeamSize.Location = new Point(243, 126);
+            numericUpDownInitialTeamSize.Location = new Point(213, 94);
+            numericUpDownInitialTeamSize.Margin = new Padding(3, 2, 3, 2);
             numericUpDownInitialTeamSize.Name = "numericUpDownInitialTeamSize";
-            numericUpDownInitialTeamSize.Size = new Size(150, 27);
+            numericUpDownInitialTeamSize.Size = new Size(131, 23);
             numericUpDownInitialTeamSize.TabIndex = 5;
             numericUpDownInitialTeamSize.Value = new decimal(new int[] { 5, 0, 0, 0 });
             // 
             // buttonSetup
             // 
-            buttonSetup.Location = new Point(186, 175);
+            buttonSetup.Location = new Point(163, 131);
+            buttonSetup.Margin = new Padding(3, 2, 3, 2);
             buttonSetup.Name = "buttonSetup";
-            buttonSetup.Size = new Size(94, 29);
+            buttonSetup.Size = new Size(82, 22);
             buttonSetup.TabIndex = 6;
             buttonSetup.Text = "Настроить";
             buttonSetup.UseVisualStyleBackColor = true;
@@ -136,9 +140,11 @@
             groupBoxSetup.Controls.Add(labelPoolSize);
             groupBoxSetup.Controls.Add(labelInitialTeamSize);
             groupBoxSetup.Controls.Add(numericUpDownPoolSize);
-            groupBoxSetup.Location = new Point(12, 12);
+            groupBoxSetup.Location = new Point(10, 9);
+            groupBoxSetup.Margin = new Padding(3, 2, 3, 2);
             groupBoxSetup.Name = "groupBoxSetup";
-            groupBoxSetup.Size = new Size(429, 219);
+            groupBoxSetup.Padding = new Padding(3, 2, 3, 2);
+            groupBoxSetup.Size = new Size(375, 164);
             groupBoxSetup.TabIndex = 7;
             groupBoxSetup.TabStop = false;
             groupBoxSetup.Text = "Настройка Симуляции";
@@ -147,9 +153,11 @@
             // 
             groupBoxControl.Controls.Add(buttonStop);
             groupBoxControl.Controls.Add(buttonStart);
-            groupBoxControl.Location = new Point(104, 594);
+            groupBoxControl.Location = new Point(23, 452);
+            groupBoxControl.Margin = new Padding(3, 2, 3, 2);
             groupBoxControl.Name = "groupBoxControl";
-            groupBoxControl.Size = new Size(250, 84);
+            groupBoxControl.Padding = new Padding(3, 2, 3, 2);
+            groupBoxControl.Size = new Size(362, 63);
             groupBoxControl.TabIndex = 8;
             groupBoxControl.TabStop = false;
             groupBoxControl.Text = "Управление Симуляцией";
@@ -157,9 +165,10 @@
             // buttonStop
             // 
             buttonStop.Enabled = false;
-            buttonStop.Location = new Point(140, 41);
+            buttonStop.Location = new Point(178, 31);
+            buttonStop.Margin = new Padding(3, 2, 3, 2);
             buttonStop.Name = "buttonStop";
-            buttonStop.Size = new Size(94, 29);
+            buttonStop.Size = new Size(82, 22);
             buttonStop.TabIndex = 1;
             buttonStop.Text = "Стоп";
             buttonStop.UseVisualStyleBackColor = true;
@@ -168,9 +177,10 @@
             // buttonStart
             // 
             buttonStart.Enabled = false;
-            buttonStart.Location = new Point(23, 41);
+            buttonStart.Location = new Point(76, 31);
+            buttonStart.Margin = new Padding(3, 2, 3, 2);
             buttonStart.Name = "buttonStart";
-            buttonStart.Size = new Size(94, 29);
+            buttonStart.Size = new Size(82, 22);
             buttonStart.TabIndex = 0;
             buttonStart.Text = "Старт";
             buttonStart.UseVisualStyleBackColor = true;
@@ -185,9 +195,11 @@
             groupBoxState.Controls.Add(listViewTeams);
             groupBoxState.Controls.Add(labelPoolStateValue);
             groupBoxState.Controls.Add(labelPoolStateLabel);
-            groupBoxState.Location = new Point(12, 253);
+            groupBoxState.Location = new Point(10, 190);
+            groupBoxState.Margin = new Padding(3, 2, 3, 2);
             groupBoxState.Name = "groupBoxState";
-            groupBoxState.Size = new Size(429, 320);
+            groupBoxState.Padding = new Padding(3, 2, 3, 2);
+            groupBoxState.Size = new Size(375, 240);
             groupBoxState.TabIndex = 9;
             groupBoxState.TabStop = false;
             groupBoxState.Text = "Состояние Симуляции";
@@ -195,9 +207,10 @@
             // buttonSetPriority
             // 
             buttonSetPriority.Enabled = false;
-            buttonSetPriority.Location = new Point(252, 271);
+            buttonSetPriority.Location = new Point(220, 203);
+            buttonSetPriority.Margin = new Padding(3, 2, 3, 2);
             buttonSetPriority.Name = "buttonSetPriority";
-            buttonSetPriority.Size = new Size(101, 29);
+            buttonSetPriority.Size = new Size(88, 22);
             buttonSetPriority.TabIndex = 5;
             buttonSetPriority.Text = "Установить";
             buttonSetPriority.UseVisualStyleBackColor = true;
@@ -206,17 +219,18 @@
             // comboBoxPriority
             // 
             comboBoxPriority.FormattingEnabled = true;
-            comboBoxPriority.Location = new Point(69, 272);
+            comboBoxPriority.Location = new Point(60, 204);
+            comboBoxPriority.Margin = new Padding(3, 2, 3, 2);
             comboBoxPriority.Name = "comboBoxPriority";
-            comboBoxPriority.Size = new Size(151, 28);
+            comboBoxPriority.Size = new Size(133, 23);
             comboBoxPriority.TabIndex = 4;
             // 
             // labelPriority
             // 
             labelPriority.AutoSize = true;
-            labelPriority.Location = new Point(15, 248);
+            labelPriority.Location = new Point(13, 186);
             labelPriority.Name = "labelPriority";
-            labelPriority.Size = new Size(349, 20);
+            labelPriority.Size = new Size(274, 15);
             labelPriority.TabIndex = 3;
             labelPriority.Text = "Установить приоритет для выбранной команды:";
             // 
@@ -225,10 +239,11 @@
             listViewTeams.Columns.AddRange(new ColumnHeader[] { columnHeaderId, columnHeaderName, columnHeaderFighters, columnHeaderPriority });
             listViewTeams.FullRowSelect = true;
             listViewTeams.GridLines = true;
-            listViewTeams.Location = new Point(49, 71);
+            listViewTeams.Location = new Point(43, 53);
+            listViewTeams.Margin = new Padding(3, 2, 3, 2);
             listViewTeams.MultiSelect = false;
             listViewTeams.Name = "listViewTeams";
-            listViewTeams.Size = new Size(304, 174);
+            listViewTeams.Size = new Size(266, 132);
             listViewTeams.TabIndex = 2;
             listViewTeams.UseCompatibleStateImageBehavior = false;
             listViewTeams.View = View.Details;
@@ -248,7 +263,7 @@
             // 
             columnHeaderFighters.Text = "Бойцы";
             columnHeaderFighters.TextAlign = HorizontalAlignment.Right;
-            columnHeaderFighters.Width = 80;
+            columnHeaderFighters.Width = 50;
             // 
             // columnHeaderPriority
             // 
@@ -258,27 +273,29 @@
             // labelPoolStateValue
             // 
             labelPoolStateValue.AutoSize = true;
-            labelPoolStateValue.Location = new Point(243, 38);
+            labelPoolStateValue.Location = new Point(213, 28);
             labelPoolStateValue.Name = "labelPoolStateValue";
-            labelPoolStateValue.Size = new Size(36, 20);
+            labelPoolStateValue.Size = new Size(29, 15);
             labelPoolStateValue.TabIndex = 1;
             labelPoolStateValue.Text = "N/A";
             // 
             // labelPoolStateLabel
             // 
             labelPoolStateLabel.AutoSize = true;
-            labelPoolStateLabel.Location = new Point(142, 38);
+            labelPoolStateLabel.Location = new Point(124, 28);
             labelPoolStateLabel.Name = "labelPoolStateLabel";
-            labelPoolStateLabel.Size = new Size(95, 20);
+            labelPoolStateLabel.Size = new Size(76, 15);
             labelPoolStateLabel.TabIndex = 0;
             labelPoolStateLabel.Text = "Пул бойцов:";
             // 
             // groupBoxLog
             // 
             groupBoxLog.Controls.Add(textBoxLog);
-            groupBoxLog.Location = new Point(483, 12);
+            groupBoxLog.Location = new Point(405, 9);
+            groupBoxLog.Margin = new Padding(3, 2, 3, 2);
             groupBoxLog.Name = "groupBoxLog";
-            groupBoxLog.Size = new Size(716, 474);
+            groupBoxLog.Padding = new Padding(3, 2, 3, 2);
+            groupBoxLog.Size = new Size(580, 506);
             groupBoxLog.TabIndex = 10;
             groupBoxLog.TabStop = false;
             groupBoxLog.Text = "Лог Симуляции";
@@ -286,25 +303,27 @@
             // textBoxLog
             // 
             textBoxLog.Dock = DockStyle.Fill;
-            textBoxLog.Location = new Point(3, 23);
+            textBoxLog.Location = new Point(3, 18);
+            textBoxLog.Margin = new Padding(3, 2, 3, 2);
             textBoxLog.Multiline = true;
             textBoxLog.Name = "textBoxLog";
             textBoxLog.ReadOnly = true;
             textBoxLog.ScrollBars = ScrollBars.Vertical;
-            textBoxLog.Size = new Size(710, 448);
+            textBoxLog.Size = new Size(574, 486);
             textBoxLog.TabIndex = 0;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1237, 713);
+            ClientSize = new Size(997, 535);
             Controls.Add(groupBoxLog);
             Controls.Add(groupBoxState);
             Controls.Add(groupBoxControl);
             Controls.Add(groupBoxSetup);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
-            Text = "MainForm";
+            Text = "TeamBattle";
             ((System.ComponentModel.ISupportInitialize)numericUpDownTeamCount).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownPoolSize).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownInitialTeamSize).EndInit();
